@@ -12,7 +12,7 @@ class Queue[T] {
 	}
 	override def hashCode(): Int={
 		var sum: Int=0
-		this.el.foreach{
+		this.lst.foreach{
 			sum+=_.hashCode()
 		}
 		sum
